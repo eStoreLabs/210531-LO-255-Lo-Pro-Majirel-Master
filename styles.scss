@@ -147,6 +147,7 @@
       &__text{
         background-color: #fff;
         border-radius: 10px;
+        min-height: 150px;
         
       }
       &__title{
@@ -188,6 +189,10 @@
         margin: 5px 15px;
         img{
           width: 80px;
+          &:hover{
+            transform: scale(1.05);
+            transition: .5s ease;
+          }
         }
       }
       &__bold{
@@ -218,10 +223,12 @@
             margin: 5px;
             font-family: $text;
             &::before{
-              width: 10px;
-              height: 10px;
+              content: '';
+              width: 15px;
+              height: 15px;
               display: inline-block;
               background-color: $bullet-color;
+              margin-right: 10px;
             }
               span{
                 font-family: $title;
@@ -441,6 +448,54 @@
         display: block;
         margin: 0 auto;
         padding-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    #es-loreal.es-loreal{
+      .es-kv{
+        background-position: center;
+      }
+      .es-intro{
+        &__img{
+          display: none;
+        }
+      }
+      .es-pros{
+        &__content{
+          width: 100%;
+          padding: 0 20px;
+        }
+        &__ctn{
+          &--reverse{
+            flex-wrap: wrap-reverse;
+          }
+        }
+        &__tube{
+          width: 150px;
+          display: block;
+          margin: 0 auto;
+        }
+        &__packshot{
+         top: -200px;
+        }
+      }
+      .es-glow{
+        &__content{
+          width: 100%;
+        }
+        &__img{
+          display: none;
+        }
+      }
+      .es-cool{
+        &__img{
+          display: none;
+        }
+        &__content{
+          width: 100%;
+        }
       }
     }
   }
