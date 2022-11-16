@@ -1,0 +1,446 @@
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("./fonts/Gotham-Bold.otf") format("opentype");
+    font-display: auto;
+    }
+    @font-face {
+        font-family: "Gotham-Light";
+        src: url("./fonts/Gotham-light-Regular.otf") format("opentype");
+        font-display: auto;
+        }
+      @font-face {
+        font-family: "Myriad-Pro";
+        src: url("./fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+        font-display: auto;
+      }
+   $title:"Gotham-Bold";
+   $text:"Gotham-Light";  
+   $myriad: "Myriad-Pro";
+
+   $bullet-color: #e7e7e7;
+   $desc-bg-color: #eeecf1;
+
+   #es-loreal.es-loreal * {
+    box-sizing: border-box;
+  }
+  #es-loreal.es-loreal img{
+    max-width: 100%;
+  }
+  #es-loreal.es-loreal {
+    font-family: $text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    color: #000;
+    background-color: #fff;
+    .es-kv{
+        width: 100%;
+        min-height: 500px;
+        background-image: url(./img/kv-bg-main.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__content{
+            width: 50%;
+            padding: 40px;
+            img{
+              width: 120px;
+              margin: 0 auto;
+              display: block;
+              margin-bottom: 40px;
+            }
+        }
+        &__title{
+            font-family: $myriad;
+            font-weight: bold;
+            font-size: 60px;
+            margin: 0;
+        }
+        &__subtitle{
+            text-transform: uppercase;
+            font-size: 30px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            span{
+              font-family: $title;
+            }
+        }
+        &__desc{
+          margin: 0;
+        }
+        
+    }
+    .es-benefits{
+      padding: 40px 20px;
+      &__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &__iconsCtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__iconSingle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 200px;
+        min-height: 180px;
+        margin: 5px 15px;
+        img{
+          width: 30px;
+        }
+      }
+      &__bold{
+        font-family: $title;
+        margin-bottom: 0;
+
+      }
+      &__desc{
+        text-align: center;
+        font-family: $myriad;
+      }
+    }
+    .es-intro{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &__img{
+        min-width: 200px;
+        max-width: 50%;
+        padding: 10px;
+        img{
+          max-width: 100%;
+        }
+      }
+      &__content{
+        min-width: 250px;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      &__single{
+        padding: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 20px;
+        &--blond{
+          background-image: url(./img/bg-blond.png);
+
+        }
+        &--brown{
+          background-image: url(./img/bg-bronze.png);
+        }
+      }
+      &__text{
+        background-color: #fff;
+        border-radius: 10px;
+        
+      }
+      &__title{
+        font-family: $title;
+        padding: 20px;
+        margin: 0;
+      }
+      &__desc{
+        padding: 10px;
+        margin: 0;
+      }
+    }
+    .es-use{
+      padding: 40px 20px;
+      &__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-family: $text;
+        font-size: 30px;
+        span{
+          font-family: $title;
+        }
+      }
+      &__iconsCtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__iconSingle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 200px;
+        min-height: 150px;
+        margin: 5px 15px;
+        img{
+          width: 80px;
+        }
+      }
+      &__bold{
+        font-family: $title;
+        margin-bottom: 0;
+        text-align: center;
+        span{
+          font-family: $text;
+        }
+      }
+      
+    }
+    .es-pros{
+      &__ctn{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__content{
+        width: 50%;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        ul{
+          li{
+            list-style: none;
+            margin: 5px;
+            font-family: $text;
+            &::before{
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              background-color: $bullet-color;
+            }
+              span{
+                font-family: $title;
+              }
+          }
+        }
+      }
+      &__dis{
+        font-size: 12px;
+        font-family: $myriad;
+      }
+      &__img{
+        width: 50%;
+        min-width: 300px;
+        min-height: 300px;
+        img{
+          max-width: 100%;
+          margin: 0 auto;
+          display: block;
+        }
+        &--ctn{
+          position: relative;
+          
+        }
+      }
+      &__packshot{
+        position: absolute;
+        top:-350px;
+                
+      }
+      &__tube{
+        width: 200px;
+      }
+      &__shades{
+        text-transform: uppercase;
+        font-size: 30px;
+        span{
+          font-family: $title;
+        }
+      }
+    }
+    .es-glow{
+      background-color: $desc-bg-color;
+      padding-bottom: 40px;
+      &__textCtn{
+        text-align: center;
+        padding: 40px;
+      }
+      &__title{
+        p{
+          text-transform: uppercase;
+          font-size: 30px;
+          span{
+            font-family: $title;
+          }
+        }
+      }
+      &__text{
+        span{
+          font-family: $title;
+        }
+      }
+      &__mainCtn{
+        display: flex;
+      }
+      &__content{
+        width: 75%;
+      }
+      &__sectionTitle{
+        text-align: center;
+        p{
+          font-family: $title;
+        }
+      }
+      &__iconsCtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__iconSingle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 150px;
+        width: 200px;
+        min-height: 240px;
+        margin: 10px;
+        &--usage{
+          min-width: 150px;
+          width: 150px;
+          min-height: 150px;
+        }
+      }
+      &__tickImg{
+        width: 30px;
+      }
+      &__iconImg{
+        width: 80px;
+        &:hover{
+          transform: scale(1.05);
+          transition: .5s ease;
+        }
+      }
+      &__iconTitle{
+        font-family: $title;
+        text-align: center;
+      }
+      &__desc{
+        text-align: center;
+        font-family: $text;
+        span{
+          font-family: $title;
+        }
+      }
+      &__img{
+        width: 25%;
+        background-image: url(./img/glow-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    .es-cool{
+
+      padding-bottom: 40px;
+      &__textCtn{
+        text-align: center;
+        padding: 40px;
+      }
+      &__title{
+        p{
+          text-transform: uppercase;
+          font-size: 30px;
+          span{
+            font-family: $title;
+          }
+        }
+      }
+      &__text{
+        span{
+          font-family: $title;
+        }
+      }
+      &__mainCtn{
+        display: flex;
+      }
+      &__content{
+        width: 75%;
+      }
+      &__sectionTitle{
+        text-align: center;
+        p{
+          font-family: $title;
+        }
+      }
+      &__iconsCtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__iconSingle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 200px;
+        width: 250px;
+        min-height: 240px;
+        margin: 10px;
+        &--usage{
+          min-width: 150px;
+          width: 150px;
+          min-height: 150px;
+        }
+      }
+      &__tickImg{
+        width: 30px;
+      }
+      &__iconImg{
+        width: 80px;
+        &:hover{
+          transform: scale(1.05);
+          transition: .5s ease;
+        }
+      }
+      &__iconTitle{
+        font-family: $title;
+        text-align: center;
+      }
+      &__desc{
+        text-align: center;
+        font-family: $text;
+        span{
+          font-family: $title;
+        }
+      }
+      &__img{
+        width: 25%;
+        background-image: url(./img/cool-inforced-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    .es-footer{
+      width: 100%;
+      img{
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+  }
