@@ -67,6 +67,21 @@
 }
 #es-loreal.es-loreal .es-kv__desc {
   margin: 0;
+  margin-bottom: 40px;
+}
+#es-loreal.es-loreal .es-kv__link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-family: "Gotham-Bold";
+}
+#es-loreal.es-loreal .es-kv__link:hover {
+  background-color: #fff;
+  color: #000;
+  outline: 2px solid #000;
+  transition: 0.5s ease-in-out;
 }
 #es-loreal.es-loreal .es-benefits {
   padding: 40px 20px;
